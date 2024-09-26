@@ -13,7 +13,7 @@ body {
 
 body::before{
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -21,9 +21,11 @@ body::before{
     background: url('Imagens/sciencephoto.png') no-repeat center top fixed;
     background-size: cover;
     opacity: 0.5;
+    margin: 0px;
 }
 
 header {
+    position: relative;
     background-color: rgba(51, 51, 51, 0.8); /* Semi-transparente para combinar com o fundo */
     color: #fff;
     padding: 10px 0;
@@ -39,7 +41,7 @@ ul {
 
 ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 15px;
 }
 
 ul li a {
@@ -60,10 +62,48 @@ footer {
     background-color: rgba(51, 51, 51, 0.8);
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-    position: fixed;
+    padding: 10px ;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: relative;
     bottom: 0;
-    width: 100%;
+    width: 120%;
+    left: -80px;
+}
+ 
+section  #pythonlogo{
+    position: relative;
+    width: 50%;
+    top: -70px;
+    left: 80px;
+    border: 0;
+    
 }
 
+section  #csslogo{
+    position: relative;
+    width: 22%;
+    top: -120px;
+    left: 100px;
+    border: 0;
+    padding: 0;
+}
+
+section  #htmllogo{
+    position: relative;
+    width: 22%;
+    left: 550px;
+    top: -120px;
+    border: 0;
+    padding: 0;
+}
+section  #gitlogo{
+    position: relative;
+    width: 30%;
+    left: 50px;
+    top: -60px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
